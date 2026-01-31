@@ -1,1 +1,151 @@
-# link
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Links</title>
+
+<style>
+  /* RESET */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* DARK KODE THEME */
+  :root {
+    --bg: #0b0d10;
+    --card: #12151a;
+    --text: #e6e6e6;
+    --muted: #8a8f98;
+    --border: #1f232b;
+    --accent: #ffffff;
+  }
+
+  /* BASE */
+  body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #12151a, #0b0d10);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                 Consolas, "Liberation Mono", monospace;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+  }
+
+  /* LAYOUT */
+  .container {
+    width: 100%;
+    max-width: 420px;
+    padding: 42px 20px;
+  }
+
+  /* PROFILE */
+  .profile {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .avatar {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border: 1px solid var(--border);
+    filter: grayscale(100%);
+  }
+
+  .profile h1 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+
+  .profile p {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  /* LINKS */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .link {
+    position: relative;
+    text-decoration: none;
+    color: var(--text);
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 15px 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.9rem;
+    letter-spacing: 0.4px;
+    transition: all 0.18s ease;
+  }
+
+  .link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    opacity: 0;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,0.08),
+      transparent
+    );
+    transition: opacity 0.2s ease;
+  }
+
+  .link:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+
+  .link:hover::before {
+    opacity: 1;
+  }
+
+  /* FOOTER */
+  footer {
+    margin-top: 52px;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--muted);
+    opacity: 0.6;
+  }
+</style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="profile">
+      <!-- Replace avatar.jpg with your image -->
+      <img src="https://i.ibb.co/dsvqfBZZ/Untitled189-20251129185335.jpg" alt="Profile picture" class="avatar" />
+      <h1>Le Corner</h1>
+      <p>Hello, i am LeCorner. I am pretty much known for making websites or making others happy and ive expanded to many social / other platforms. I originate from the Philippines too!</p>
+    </header>
+
+    <section class="links">
+      <!-- Replace # with your links -->
+      <a href="https://www.tiktok.com/@le.corner.coder?_r=1&_t=ZS-93XAKLVxjBy" class="link">Tiktok (main)</a>
+      <a href="https://www.tiktok.com/@lc.us?_r=1&_t=ZS-93XANop2a3T" class="link">Tiktok (alt)</a>
+      <a href="https://github.com/GJ04DL5539" class="link">Main Github</a>
+      <a href="https://github.com/le-corner" class="link">Personal Github</a>      
+<a href="https://pastebin.com/29v3haYZ" class="link">Coverstar</a>
+    </section>
+
+    <footer>
+gullible © 2026
+    </footer>
+  </main>
+</body>
+</html>
